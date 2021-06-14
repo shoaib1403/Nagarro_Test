@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Nagarro_Assignment">
+<listeners>
+		<listener class-name="Util_Source.TestListener" />
+	</listeners>
+	 <suite-files>
+                   <suite-file path="./MobileAutomationSuite.xml" />
+                   <suite-file path="./WebAutomationSuite.xml" />
+                   <suite-file path="./RestAssuredAutomationSuite.xml" />
+            </suite-files>
+</suite> <!-- Nagarro_Assignment -->

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Nagarro_Assignment" parallel="tests" thread-count="2">
+	<test name="Verify Drag and Drop">
+		<classes>
+			<class name="TestCases.TC06_Web_DragAndDrop">
+				<methods>
+					<include name="dragAndDrop" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Multi Selected List">
+		<parameter name="itemList" value="Item 1,Item 3,Item 7" />
+		<classes>
+			<class name="TestCases.TC07_Web_List_Select">
+				<methods>
+					<include name="selectable" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Rent Car in control group">
+		<parameter name="rentCar1" value="SUV" />
+		<parameter name="transmissionType1" value="Automatic" />
+		<parameter name="numberofCar1" value="2" />
+		<parameter name="rentCar2" value="Truck" />
+		<parameter name="transmissionType2" value="Standard" />
+		<parameter name="numberofCar2" value="1" />
+		<classes>
+			<class
+				name="TestCases.TC08_Web_Controlgroup">
+				<methods>
+					<include name="RentCarIncontrolgroup" />
+				</methods>
+			</class>
+		</classes>
+	</test><!-- Test -->
+</suite> <!-- Suite -->
+	

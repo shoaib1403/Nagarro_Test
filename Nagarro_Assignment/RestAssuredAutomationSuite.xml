@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Nagarro_Assignment">
+	<test name="Verify Get Response code with node">
+	<parameter name="getURL" value="https://reqres.in/api/users?page=2" />
+		<classes>
+			<class name="TestCases.TC_GetRequest">
+				<methods>
+					<include name="GetfirstName" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Verify Post Request with JSON body">
+		<parameter name="getURL" value="https://reqres.in/api/users" />
+		<parameter name="name" value="Bryant" />
+		<parameter name="job" value="BA" />
+		<classes>
+			<class name="TestCases.TC_PostRequest">
+				<methods>
+					<include name="PostStatusScheme" />
+				</methods>
+			</class>
+		</classes>
+	</test><!-- Test -->
+</suite> <!-- Suite -->
+	
